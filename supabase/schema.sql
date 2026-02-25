@@ -1,0 +1,5 @@
+-- This file is kept for reference only.
+-- The canonical schema lives in supabase/migrations/20260224000000_init.sql
+-- and is applied automatically by `npm run db:reset` / `supabase start`.
+--
+-- Do not run this file manually.

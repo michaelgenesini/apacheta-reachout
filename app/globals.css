@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+@import "tailwindcss";
+
+:root {
+  --cream: #fffcf1;
+  --cream-mid: #f5f0e4;
+  --border: #e5ddd0;
+  --text: #2c2416;
+  --muted: #6b5e4f;
+  --accent: #b8d8ba;
+  --accent-dark: #4a7c59;
+  --teal: #0c7b5f;
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-cream-mid: var(--cream-mid);
+  --color-border: var(--border);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-dark: var(--accent-dark);
+  --color-teal: var(--teal);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--cream);
+  color: var(--text);
+  font-family: "Lora", Georgia, serif;
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+}
