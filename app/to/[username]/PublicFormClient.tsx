@@ -68,7 +68,7 @@ export default function PublicFormClient({
 
   if (done) {
     return (
-      <div className="h-screen flex items-center justify-center px-6" style={{ background: bgColor }}>
+      <div className="min-h-screen flex items-center justify-center px-6 py-10" style={{ background: bgColor }}>
         <div className="text-center max-w-sm">
           <div
             className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4"
@@ -85,7 +85,7 @@ export default function PublicFormClient({
   }
 
   return (
-    <div className="h-screen flex items-center justify-center px-6 overflow-hidden" style={{ background: bgColor }}>
+    <div className="min-h-screen flex items-center justify-center px-6 py-10" style={{ background: bgColor }}>
       <div className="w-full max-w-md">
         <h1
           className="font-medium mb-1"

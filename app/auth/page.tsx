@@ -129,7 +129,7 @@ function AuthForm() {
 
 export default function AuthPage() {
   return (
-    <div className="h-screen flex items-center justify-center px-6" style={{ background: "var(--cream)" }}>
+    <div className="min-h-screen flex items-center justify-center px-6 py-12" style={{ background: "var(--cream)" }}>
       <Suspense>
         <AuthForm />
       </Suspense>

@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function LandingPage() {
   return (
     <div
-      className="h-screen flex flex-col overflow-hidden"
+      className="min-h-screen flex flex-col"
       style={{ background: "var(--cream)", color: "var(--text)" }}
     >
       {/* Nav */}
@@ -24,9 +24,9 @@ export default function LandingPage() {
       </nav>
 
       {/* Main content — flex-1 to fill remaining space */}
-      <main className="flex-1 max-w-2xl w-full mx-auto px-8 flex flex-col justify-between pb-8 min-h-0">
+      <main className="flex-1 max-w-2xl w-full mx-auto px-8 flex flex-col justify-between pb-8">
         {/* Hero */}
-        <div className="pt-8">
+        <div className="pt-6 sm:pt-8">
           {/* Eyebrow tag */}
           <div className="inline-flex items-center gap-2 mb-6">
             <span
@@ -83,7 +83,7 @@ export default function LandingPage() {
 
         {/* Bottom row: two columns */}
         <div
-          className="grid grid-cols-2 gap-12"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12 mt-8"
           style={{ borderTop: "1px solid var(--border)", paddingTop: "24px" }}
         >
           <div>
@@ -145,7 +145,7 @@ export default function LandingPage() {
         </div>
 
         {/* Footer */}
-        <footer style={{ fontSize: "13px", color: "var(--muted)" }}>
+        <footer className="mt-8" style={{ fontSize: "13px", color: "var(--muted)" }}>
           <p>
             Built by{" "}
             <a
